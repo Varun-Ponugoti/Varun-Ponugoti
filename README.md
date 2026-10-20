@@ -15,27 +15,7 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
 
-**Single and Multi-Object Recognition**
-
-One detector that names a single object or finds every object in a crowded image: 94.2% classification accuracy, 0.806 mAP50 detection.
-
-[GitHub →](https://github.com/Varun-Ponugoti/Vision-Training)
-
-<details>
-<summary>Read more</summary>
-<br>
-
-The dataset only had photos of one object at a time, but the system also had to find many objects in one image. So we built the multi-object data ourselves: pasting single photos into grids, transforming their box labels, and splitting train/val/test *before* compositing so no test photo leaks into training. Boxes were auto-labeled with Grounding DINO instead of drawn by hand. [Your role, e.g., "I built the grid dataset pipeline and trained and evaluated the YOLOv8 detector."] Team of 4.
-
-- **Domain:** Object recognition · **Dataset:** 7,315 custom photos, 73 classes
-- **Models:** Baseline CNN, MobileNetV2, ResNet50, EfficientNetB0, YOLOv8s
-- **Result:** EfficientNetB0 at 94.2% test accuracy (5.7× smaller than ResNet50 at similar accuracy); YOLOv8s at 0.806 mAP50 / 0.765 mAP50-95 on 561 test grids, 12 ms per image
-
-</details>
-
-</td>
 <td width="50%" valign="top">
 
 **Stereo to Mono Vision with ORB-SLAM3**
@@ -57,8 +37,30 @@ A stereo camera that degrades slowly is dangerous because SLAM keeps running wit
 </details>
 
 </td>
-</tr>
-<tr>
+  
+<td width="50%" valign="top">
+
+**Single and Multi-Object Recognition**
+
+One detector that names a single object or finds every object in a crowded image: 94.2% classification accuracy, 0.806 mAP50 detection.
+
+[GitHub →](https://github.com/Varun-Ponugoti/Vision-Training)
+
+<details>
+<summary>Read more</summary>
+<br>
+
+The dataset only had photos of one object at a time, but the system also had to find many objects in one image. So we built the multi-object data ourselves: pasting single photos into grids, transforming their box labels, and splitting train/val/test *before* compositing so no test photo leaks into training. Boxes were auto-labeled with Grounding DINO instead of drawn by hand. [Your role, e.g., "I built the grid dataset pipeline and trained and evaluated the YOLOv8 detector."] Team of 4.
+
+- **Domain:** Object recognition · **Dataset:** 7,315 custom photos, 73 classes
+- **Models:** Baseline CNN, MobileNetV2, ResNet50, EfficientNetB0, YOLOv8s
+- **Result:** EfficientNetB0 at 94.2% test accuracy (5.7× smaller than ResNet50 at similar accuracy); YOLOv8s at 0.806 mAP50 / 0.765 mAP50-95 on 561 test grids, 12 ms per image
+
+</details>
+
+</td>
+
+
 <td width="50%" valign="top">
 
 **Dynamic Trajectory Replanning for a 7-DoF Manipulator**
