@@ -67,7 +67,7 @@ The dataset only had photos of one object at a time, but the system also had to 
 
 Replanning a robot arm's path in real time when obstacles move.
 
-[GitHub →](https://github.com/Varun-Ponugoti/REPO)
+[GitHub →](https://github.com/Varun-Ponugoti/PANDA-R2P)
 
 <details>
 <summary>Read more</summary>
