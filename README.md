@@ -11,15 +11,7 @@
 - Getting models to run fast and reliably on edge hardware (quantization, pruning, distillation)
 - Motion planning for manipulators and mobile robots
 
-## 🚧 Currently Working On
-
-**[Project title]**
-
-[2-3 sentences: the question you're trying to answer, what you've built so far, and what comes next. Example: extending my multi-object detector to instance segmentation by prompting SAM with Grounding DINO boxes, and measuring how mask quality changes on cluttered scenes.]
-
-[GitHub →](https://github.com/Varun-Ponugoti/REPO)
-
-### 🤖 Selected Robotics and AI Projects
+### 🤖 Selected Robotics Projects
 
 <table>
 <tr>
@@ -113,16 +105,3 @@ Simulation hides the problems that show up on real hardware: noisy sensors, whee
 </table>
 
 ---
-
-## 📄 Publication
-
-**Vision Language Models for Human-Like Perception in Robotics: A Systematic and Comprehensive Survey** (under review)
-A survey of how VLMs are designed, trained, optimized, and applied to robotic systems.
-
-## 🛠️ Tools
-
-Python · C++ · PyTorch · TensorFlow · ROS 2 · ORB-SLAM3 · YOLOv8 · PyBullet · MuJoCo · Gazebo · Jetson Orin · SolidWorks
-
-## 📫 Connect
-
-[LinkedIn](https://linkedin.com/in/varunponugoti) · ponugoti.va@northeastern.edu
