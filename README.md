@@ -21,7 +21,7 @@
 
 One detector that names a single object or finds every object in a crowded image: 94.2% classification accuracy, 0.806 mAP50 detection.
 
-[GitHub →](https://github.com/Varun-Ponugoti/DLAI)
+[GitHub →](https://github.com/Varun-Ponugoti/Vision-Training)
 
 <details>
 <summary>Read more</summary>
@@ -38,11 +38,11 @@ The dataset only had photos of one object at a time, but the system also had to 
 </td>
 <td width="50%" valign="top">
 
-**Stereo Camera Health Monitor for ORB-SLAM3**
+**Stereo to Mono Vision with ORB-SLAM3**
 
 Detecting the point where a degrading stereo camera becomes no better than mono, before SLAM tracking fails.
 
-[GitHub →](https://github.com/shyam-sreenivasan/Stereo-Camera-Health-Monitor-For-ORB-SLAM3)
+[GitHub →](https://github.com/Varun-Ponugoti/Stereo2Mono)
 
 <details>
 <summary>Read more</summary>
@@ -80,27 +80,7 @@ A plan that was collision-free a second ago can be wrong now if something moves 
 </details>
 
 </td>
-<td width="50%" valign="top">
 
-**Autonomous Mobile Robot for Obstacle Avoidance**
-
-A wheeled robot built from hardware to software that maps, navigates, and avoids obstacles.
-
-[GitHub →](https://github.com/Varun-Ponugoti/REPO)
-
-<details>
-<summary>Read more</summary>
-<br>
-
-Simulation hides the problems that show up on real hardware: noisy sensors, wheel slip, and timing. This robot uses vision-based perception for obstacle detection and localization, a SLAM pipeline for goal-directed navigation with continuous map updates, and PID control with reactive obstacle avoidance. [Your role.] [Team size, or remove if solo.]
-
-- **Domain:** Mobile robotics · **Platform:** [e.g., Raspberry Pi / Jetson, camera, LiDAR]
-- **Methods:** Vision-based detection, SLAM, PID control, real-time replanning
-- **Result:** [Add a number, e.g., navigation success rate or goal-reaching accuracy]
-
-</details>
-
-</td>
 </tr>
 </table>
 
