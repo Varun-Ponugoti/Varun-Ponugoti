@@ -16,7 +16,7 @@
 <table>
 <tr>
 
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 **Stereo to Mono Vision with ORB-SLAM3**
 
@@ -38,7 +38,7 @@ A stereo camera that degrades slowly is dangerous because SLAM keeps running wit
 
 </td>
   
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 **Single and Multi-Object Recognition**
 
@@ -61,7 +61,7 @@ The dataset only had photos of one object at a time, but the system also had to 
 </td>
 
 
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 **Dynamic Trajectory Replanning for a 7-DoF Manipulator**
 
