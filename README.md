@@ -1,3 +1,16 @@
+## About Me
+
+👋 Hi, I'm Varun, a Robotics M.S. student at Northeastern University. Before grad school, I worked as an AI Engineer at DRDO's Research Centre Imarat, training vision-language models and deploying them on Jetson-class robot hardware for real-time perception. I like the part of robotics where models leave the notebook and have to work on a real machine.
+
+🎯 **Open to Spring 2027 co-op roles** in robot perception, SLAM, and robotics software.
+
+## 🧠 Areas of Interest
+
+- Robot perception: detection, segmentation, and vision-language models
+- SLAM, sensor fusion, and knowing when a sensor can't be trusted
+- Getting models to run fast and reliably on edge hardware (quantization, pruning, distillation)
+- Motion planning for manipulators and mobile robots
+
 ### 🤖 Selected Robotics Projects
 
 <table>
@@ -15,7 +28,7 @@ Detecting the point where a degrading stereo camera becomes no better than mono,
 <summary>Read more</summary>
 <br>
 
-A stereo camera that degrades slowly is dangerous because SLAM keeps running without any warning until tracking collapses. We tested whether there's a detectable crossover point where stereo stops beating mono, and trained a health monitor to catch it in real time. I designed and trained the ResNet-18 + GRU health monitor that predicts, from image sequences alone, when the stereo setup has degraded past the switch point. Team of 5.
+A stereo camera that degrades slowly is dangerous because SLAM keeps running without any warning until tracking collapses. We tested whether there's a detectable crossover point where stereo stops beating mono, and trained a health monitor to catch it in real time. [Your role, e.g., "I ran the degradation experiments for blur and occlusion and built the feature extraction pipeline."] Team of 5.
 
 - **Domain:** Visual SLAM · **Dataset:** TUM-VI
 - **Tools:** ORB-SLAM3, ResNet18 + GRU health monitor
@@ -24,12 +37,12 @@ A stereo camera that degrades slowly is dangerous because SLAM keeps running wit
 </details>
 
 </td>
-
+  
 <td width="33%" valign="top">
 
 **Mobott: Mobile Robot Platform**
 
-A ROS 2 mobile robot that localizes itself from an overhead camera, plans with RRT*, and follows the path on real hardware.
+An ESP32 differential-drive robot that localizes itself from an overhead camera, plans with RRT*, and follows people with YOLOv8.
 
 [GitHub →](https://github.com/shyam-sreenivasan/Mobott)
 
@@ -37,15 +50,16 @@ A ROS 2 mobile robot that localizes itself from an overhead camera, plans with R
 <summary>Read more</summary>
 <br>
 
-A small differential-drive robot runs its motors open-loop, so it can't measure where it actually went. We gave it eyes from outside: an overhead camera localizes it from an ArUco marker, an RRT* planner plans a path to the goal, and a low-level controller follows that path using the camera's pose feedback. I worked across the stack, including the RRT* planning, path-following control, homography-based camera calibration, ESP32 firmware in C++, and the ROS 2 interfaces. We also modeled the robot in MuJoCo for RL experiments. Team of 2.
+A small robot with no wheel encoders or IMU still needs to know where it is to navigate. We gave it global pose feedback from an overhead camera: homography calibration of the table plane plus ArUco markers, which feeds an RRT* planner and a low-level path-tracking controller. I worked across the stack: ESP32 firmware commands in C++, robot behaviors in Python, the ROS 2 interface, camera localization, planning and control, and a MuJoCo model of the robot for RL. Team of 2 (collaborator).
 
-- **Domain:** Mobile robotics · **Hardware:** ESP32 differential-drive robot, iPhone camera
-- **Tools:** ROS 2, OpenCV (ArUco, homography), RRT*, YOLOv8, MuJoCo, Docker
-- **Result:** Closed-loop goal navigation on real hardware; measuring the true turn rate (8.5 vs. an assumed 7.0 ms/deg) raised home-return view match from 0.67 to 0.91; fail-safe stop after 300 ms of lost comms
+- **Domain:** Mobile robotics · **Hardware:** ESP32 car, iPhone camera, ultrasonic sensor
+- **Tools:** ROS 2, OpenCV, ArUco, YOLOv8, RRT*, MuJoCo, Docker
+- **Result:** Closed-loop tabletop navigation from camera pose feedback; measured turn rate (8.5 vs assumed 7.0 ms/deg) raised home-return view match from 0.67 to 0.91; fail-safe stop after 300 ms of lost comms
 
 </details>
 
 </td>
+
 
 <td width="33%" valign="top">
 
@@ -59,11 +73,11 @@ Replanning a robot arm's path in real time when obstacles move.
 <summary>Read more</summary>
 <br>
 
-A plan that was collision-free a second ago can be wrong now if something moves into the arm's path. We reproduced and adapted a dynamic replanning framework in PyBullet, combining RRT-Connect, trajectory optimization, and path rewiring, with custom bounding volumes for faster collision checks. I implemented RRT-Connect, the collision checker, and trajectory generation, and drove the arm with PID control through ROS 2. Team of 2.
+A plan that was collision-free a second ago can be wrong now if something moves into the arm's path. We reproduced and adapted a dynamic replanning framework in PyBullet, combining RRT-Connect, trajectory optimization, and path rewiring, with custom bounding volumes for faster collision checks. [Your role.] [Team size, or remove if solo.]
 
 - **Domain:** Manipulation · **Simulator:** PyBullet
 - **Methods:** RRT-Connect, trajectory optimization, path rewiring, custom bounding volumes
-- **Result:** 100% success across 30 trials, rerouting around obstacles in under 0.5 s, with planned paths simplified by over 80%
+- **Result:** [Add a number, e.g., success rate, replanning time, or collisions avoided]
 
 </details>
 
